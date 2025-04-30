@@ -7,9 +7,11 @@ from pandasql import sqldf
 from openai import OpenAI
 import os
 
-from dotenv import load_dotenv
-load_dotenv()  # This loads the .env file into the environment
-api_key = os.getenv("OPENAI_API_KEY")
+#from dotenv import load_dotenv
+#load_dotenv()  # This loads the .env file into the environment
+#api_key = os.getenv("OPENAI_API_KEY")
+import streamlit as st
+api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key=api_key)
 
 def analyze_nutrition_with_gpt(nutriments):
