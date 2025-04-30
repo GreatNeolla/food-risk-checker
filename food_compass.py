@@ -385,7 +385,7 @@ with tab2:
     st.header("🗺️ Food Recall Map")
     selected_year = st.selectbox(
         "Filter by Recall Year",
-        options=["All", "2024", "2023", "2022", "2021"],
+        options=["All", "2025", "2024", "2023", "2022", "2021"],
         index=0  # default is all
     )
 
